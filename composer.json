@@ -30,9 +30,6 @@
             "AuroraWebSoftware\\Tests\\Shoppingcart\\": "tests/"
         }
     },
-    "suggest": {
-        "gloudemans/notify": "Simple flash notifications for Laravel"
-    },
     "minimum-stability": "stable",
     "extra": {
         "laravel": {
