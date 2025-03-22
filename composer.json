@@ -1,6 +1,6 @@
 {
     "name": "aurorawebsoftware/shoppingcart",
-    "description": "Laravel Shoppingcart",
+    "description": "Laravel ShoppingCart",
     "keywords": ["laravel", "shoppingcart"],
     "license": "MIT",
     "authors": [
