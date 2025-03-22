@@ -1,8 +1,8 @@
 <?php
 
-namespace Gloudemans\Shoppingcart\Contracts;
+namespace AuroraWebSoftware\Shoppingcart\Contracts;
 
-use Gloudemans\Shoppingcart\CartItem;
+use AuroraWebSoftware\Shoppingcart\CartItem;
 
 interface Calculator
 {

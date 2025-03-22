@@ -1,9 +1,9 @@
 <?php
 
-namespace Gloudemans\Shoppingcart\Calculation;
+namespace AuroraWebSoftware\Shoppingcart\Calculation;
 
-use Gloudemans\Shoppingcart\CartItem;
-use Gloudemans\Shoppingcart\Contracts\Calculator;
+use AuroraWebSoftware\Shoppingcart\CartItem;
+use AuroraWebSoftware\Shoppingcart\Contracts\Calculator;
 
 class GrossPrice implements Calculator
 {

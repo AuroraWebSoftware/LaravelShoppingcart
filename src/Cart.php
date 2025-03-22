@@ -1,14 +1,14 @@
 <?php
 
-namespace Gloudemans\Shoppingcart;
+namespace AuroraWebSoftware\Shoppingcart;
 
 use Carbon\Carbon;
 use Closure;
-use Gloudemans\Shoppingcart\Contracts\Buyable;
-use Gloudemans\Shoppingcart\Contracts\InstanceIdentifier;
-use Gloudemans\Shoppingcart\Exceptions\CartAlreadyStoredException;
-use Gloudemans\Shoppingcart\Exceptions\InvalidRowIDException;
-use Gloudemans\Shoppingcart\Exceptions\UnknownModelException;
+use AuroraWebSoftware\Shoppingcart\Contracts\Buyable;
+use AuroraWebSoftware\Shoppingcart\Contracts\InstanceIdentifier;
+use AuroraWebSoftware\Shoppingcart\Exceptions\CartAlreadyStoredException;
+use AuroraWebSoftware\Shoppingcart\Exceptions\InvalidRowIDException;
+use AuroraWebSoftware\Shoppingcart\Exceptions\UnknownModelException;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Session\SessionManager;
@@ -90,7 +90,7 @@ class Cart
      *
      * @param string|null $instance
      *
-     * @return \Gloudemans\Shoppingcart\Cart
+     * @return \AuroraWebSoftware\Shoppingcart\Cart
      */
     public function instance($instance = null)
     {
@@ -126,7 +126,7 @@ class Cart
      * @param float     $weight
      * @param array     $options
      *
-     * @return \Gloudemans\Shoppingcart\CartItem
+     * @return \AuroraWebSoftware\Shoppingcart\CartItem
      */
     public function add($id, $name = null, $qty = null, $price = null, $weight = 0, array $options = [])
     {
@@ -144,12 +144,12 @@ class Cart
     /**
      * Add an item to the cart.
      *
-     * @param \Gloudemans\Shoppingcart\CartItem $item          Item to add to the Cart
+     * @param \AuroraWebSoftware\Shoppingcart\CartItem $item          Item to add to the Cart
      * @param bool                              $keepDiscount  Keep the discount rate of the Item
      * @param bool                              $keepTax       Keep the Tax rate of the Item
      * @param bool                              $dispatchEvent
      *
-     * @return \Gloudemans\Shoppingcart\CartItem The CartItem
+     * @return \AuroraWebSoftware\Shoppingcart\CartItem The CartItem
      */
     public function addCartItem($item, $keepDiscount = false, $keepTax = false, $dispatchEvent = true)
     {
@@ -188,7 +188,7 @@ class Cart
      * @param string $rowId
      * @param mixed  $qty
      *
-     * @return \Gloudemans\Shoppingcart\CartItem
+     * @return \AuroraWebSoftware\Shoppingcart\CartItem
      */
     public function update($rowId, $qty)
     {
@@ -265,7 +265,7 @@ class Cart
      *
      * @param string $rowId
      *
-     * @return \Gloudemans\Shoppingcart\CartItem
+     * @return \AuroraWebSoftware\Shoppingcart\CartItem
      */
     public function get($rowId)
     {
@@ -811,7 +811,7 @@ class Cart
      * @param float     $weight
      * @param array     $options
      *
-     * @return \Gloudemans\Shoppingcart\CartItem
+     * @return \AuroraWebSoftware\Shoppingcart\CartItem
      */
     private function createCartItem($id, $name, $qty, $price, $weight, array $options)
     {

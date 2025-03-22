@@ -1,9 +1,9 @@
 <?php
 
-namespace Gloudemans\Tests\Shoppingcart;
+namespace AuroraWebSoftware\Tests\Shoppingcart;
 
-use Gloudemans\Shoppingcart\CartItem;
-use Gloudemans\Shoppingcart\ShoppingcartServiceProvider;
+use AuroraWebSoftware\Shoppingcart\CartItem;
+use AuroraWebSoftware\Shoppingcart\ShoppingcartServiceProvider;
 use Orchestra\Testbench\TestCase;
 
 class CartItemTest extends TestCase
